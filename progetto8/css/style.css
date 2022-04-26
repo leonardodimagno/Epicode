@@ -1,0 +1,43 @@
+.container{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    height: 100px;
+    
+
+
+}
+.card button{
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+h1{
+    margin-left: 23em;
+    font-size: 20px;
+    
+}
+h2{
+    font-size: 20px;
+    margin-left: 48em;
+    margin-bottom: 3em;
+}
+.stop{
+    height: 30px;
+   background-color: red;
+   color: white ;
+}
+h1{
+    margin-left: 45em;
+}
