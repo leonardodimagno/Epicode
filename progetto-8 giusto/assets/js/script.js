@@ -99,7 +99,7 @@ function aggiungiUtente() {
     let credit = Number(input3.value);
    
     if (name == "" || surname == "") {
-        return alert("Scrivi nome e cognome per aggiungere un nuovo clienete");
+        return alert("Scrivi nome e cognome per aggiungere un nuovo user");
     }
     else {
         arr.push(new User(id, name, surname, credit, 0));
@@ -121,7 +121,7 @@ function aggiungiUtente() {
 
 function selectUser() {
     if (userSelector.value === "null") {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else {
         let sel = Number(userSelector.value);
@@ -132,7 +132,7 @@ function selectUser() {
 
 function infoCredito() {
     if (selectedUser == null) {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else {
         display.innerText = "Credito attuale: " + selectedUser.tel119() + "€";
@@ -152,7 +152,7 @@ function ricarica4() {
 }
 function ricarica(val) {
     if (selectedUser == null) {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else {
         selectedUser.ricarica(val);
@@ -164,7 +164,7 @@ function ricarica(val) {
 
 function infoChiamate() {
     if (selectedUser == null) {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else {
         display.innerText = "N. chiamate: " + selectedUser.getNumeroChiamate();
@@ -172,7 +172,7 @@ function infoChiamate() {
 }
 function azzeramentoCalls() {
     if (selectedUser == null) {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else {
         selectedUser.azzeraChiamte();
@@ -184,10 +184,10 @@ function azzeramentoCalls() {
 
 function telefonata() {
     if (selectedUser == null) {
-        display.innerText = "Seleziona un utente";
+        display.innerText = "Seleziona un user";
     }
     else if (selectedUser.credito < 0.25) {
-        display.innerText = "Credito insufficente";
+        display.innerText = "Credito insufficiente";
     }
     else {
         startTelefonata();
