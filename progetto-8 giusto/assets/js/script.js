@@ -49,8 +49,8 @@ let durata;
 let interval;
 let tester = document.querySelector("#tester");
 let display = document.querySelector("#display");
-let closeCall = document.querySelector("#closeCall");
 let userSelector = document.querySelector("#userSelector");
+let closeCall = document.querySelector("#closeCall");
 
 userSelector.addEventListener("change", selectUser);
 (_a = document.querySelector("#btn1")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", infoCredito);
