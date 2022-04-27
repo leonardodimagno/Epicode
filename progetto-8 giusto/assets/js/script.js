@@ -40,7 +40,7 @@ class User extends Persona {
 }
 
 let user1 = new User(0, "Nicola", "Morini", 25, 0);
-let user2 = new User(1, "Gabriele", "Cestra", 50, 25);
+let user2 = new User(1, "Gabriele", "Cestra", 30, 1);
 let user3 = new User(2, "Franco", "Losi", 10, 2);
 
 let arr = [user1, user2, user3];
